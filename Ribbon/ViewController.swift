@@ -23,3 +23,32 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UICollectionViewDataSource {
+
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 50
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! RibbonCell
+        cell.configureCell()
+        return cell
+    }
+}
+
+
+class RibbonCell: UICollectionViewCell {
+
+    @IBOutlet weak var ribbonViewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var ribbonView: RibbonView!
+
+    override func awakeFromNib() {
+
+    }
+
+    func configureCell() {
+        ribbonViewWidthConstraint.constant = CGFloat(arc4random_uniform(UInt32(self.bounds.width - 100) ) + 50)
+        self.layoutIfNeeded()
+    }
+}

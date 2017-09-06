@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RibbonView" customModule="Ribbon" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="7gT-bp-Rqj" id="MqF-Gh-le4"/>
+                <outlet property="title" destination="AC3-9u-d1v" id="VW5-43-jYf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7gT-bp-Rqj">
+                    <rect key="frame" x="384" y="0.0" width="36" height="36"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-9u-d1v">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.72549019609999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="AC3-9u-d1v" secondAttribute="bottom" id="1Bi-Wn-goe"/>
+                <constraint firstItem="AC3-9u-d1v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HOk-ug-AVv"/>
+                <constraint firstAttribute="bottom" secondItem="7gT-bp-Rqj" secondAttribute="bottom" id="IOe-Tr-wdf"/>
+                <constraint firstItem="7gT-bp-Rqj" firstAttribute="leading" secondItem="AC3-9u-d1v" secondAttribute="trailing" id="MOn-tN-8tC"/>
+                <constraint firstItem="7gT-bp-Rqj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZgU-fg-FGS"/>
+                <constraint firstItem="AC3-9u-d1v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gWS-Cn-4Rs"/>
+                <constraint firstItem="7gT-bp-Rqj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" id="rvh-7X-Lxh"/>
+                <constraint firstAttribute="trailing" secondItem="7gT-bp-Rqj" secondAttribute="trailing" constant="8" id="xxI-cJ-guJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52" y="-243"/>
+        </view>
+    </objects>
+</document>

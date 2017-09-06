@@ -12,6 +12,8 @@
 		3AE4E5B51F5FF4C7001E7385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE4E5B31F5FF4C7001E7385 /* Main.storyboard */; };
 		3AE4E5B71F5FF4C7001E7385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AE4E5B61F5FF4C7001E7385 /* Assets.xcassets */; };
 		3AE4E5BA1F5FF4C7001E7385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE4E5B81F5FF4C7001E7385 /* LaunchScreen.storyboard */; };
+		3AE4E5C61F5FF539001E7385 /* RibbonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE4E5C51F5FF539001E7385 /* RibbonView.swift */; };
+		3AE4E5C81F5FF572001E7385 /* RibbonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE4E5C71F5FF572001E7385 /* RibbonView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3AE4E5B61F5FF4C7001E7385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AE4E5B91F5FF4C7001E7385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AE4E5BB1F5FF4C7001E7385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AE4E5C51F5FF539001E7385 /* RibbonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RibbonView.swift; sourceTree = "<group>"; };
+		3AE4E5C71F5FF572001E7385 /* RibbonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RibbonView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		3AE4E5AE1F5FF4C7001E7385 /* Ribbon */ = {
 			isa = PBXGroup;
 			children = (
+				3AE4E5C41F5FF539001E7385 /* RibbonView */,
 				3AE4E5AF1F5FF4C7001E7385 /* AppDelegate.swift */,
 				3AE4E5B11F5FF4C7001E7385 /* ViewController.swift */,
 				3AE4E5B31F5FF4C7001E7385 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				3AE4E5BB1F5FF4C7001E7385 /* Info.plist */,
 			);
 			path = Ribbon;
+			sourceTree = "<group>";
+		};
+		3AE4E5C41F5FF539001E7385 /* RibbonView */ = {
+			isa = PBXGroup;
+			children = (
+				3AE4E5C51F5FF539001E7385 /* RibbonView.swift */,
+				3AE4E5C71F5FF572001E7385 /* RibbonView.xib */,
+			);
+			path = RibbonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,7 @@
 			files = (
 				3AE4E5BA1F5FF4C7001E7385 /* LaunchScreen.storyboard in Resources */,
 				3AE4E5B71F5FF4C7001E7385 /* Assets.xcassets in Resources */,
+				3AE4E5C81F5FF572001E7385 /* RibbonView.xib in Resources */,
 				3AE4E5B51F5FF4C7001E7385 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +153,7 @@
 			files = (
 				3AE4E5B21F5FF4C7001E7385 /* ViewController.swift in Sources */,
 				3AE4E5B01F5FF4C7001E7385 /* AppDelegate.swift in Sources */,
+				3AE4E5C61F5FF539001E7385 /* RibbonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +317,7 @@
 				3AE4E5C01F5FF4C7001E7385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
