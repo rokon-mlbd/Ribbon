@@ -6,13 +6,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RibbonView" customModule="Ribbon" customModuleProvider="target">
             <connections>
                 <outlet property="imageView" destination="7gT-bp-Rqj" id="MqF-Gh-le4"/>
+                <outlet property="imageViewWidthConstraint" destination="ivo-3u-81a" id="JHq-nr-dSK"/>
                 <outlet property="title" destination="AC3-9u-d1v" id="VW5-43-jYf"/>
             </connections>
         </placeholder>
@@ -24,6 +24,9 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7gT-bp-Rqj">
                     <rect key="frame" x="384" y="0.0" width="36" height="36"/>
                     <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="ivo-3u-81a"/>
+                    </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-9u-d1v">
                     <rect key="frame" x="32" y="0.0" width="344" height="36"/>
@@ -40,7 +43,6 @@
                 <constraint firstItem="7gT-bp-Rqj" firstAttribute="leading" secondItem="AC3-9u-d1v" secondAttribute="trailing" constant="8" id="MOn-tN-8tC"/>
                 <constraint firstItem="7gT-bp-Rqj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZgU-fg-FGS"/>
                 <constraint firstItem="AC3-9u-d1v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gWS-Cn-4Rs"/>
-                <constraint firstItem="7gT-bp-Rqj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" id="rvh-7X-Lxh"/>
                 <constraint firstAttribute="trailing" secondItem="7gT-bp-Rqj" secondAttribute="trailing" constant="8" id="xxI-cJ-guJ"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

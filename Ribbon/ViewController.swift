@@ -27,17 +27,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
 extension ViewController: UICollectionViewDataSource {
-
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
@@ -55,12 +48,7 @@ class RibbonCell: UICollectionViewCell {
 
     @IBOutlet weak var ribbonView: RibbonView!
 
-    override func awakeFromNib() {
-
-    }
-
     func configureCell(_ text: String) {
-        ribbonView.title.text = text
-        ribbonView.setNeedsDisplay()
+        ribbonView.setRibbonTitle(text, andImage: nil)
     }
 }

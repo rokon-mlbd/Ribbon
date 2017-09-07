@@ -13,25 +13,25 @@ class RibbonView: UIView {
 
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageViewWidthConstraint: NSLayoutConstraint!
+
 
     /// MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
+        initialSetup()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setupView()
+        initialSetup()
     }
 
     /// Performs the initial setup.
-    fileprivate func setupView() {
+    private func initialSetup() {
         let view = viewFromNibForClass()
         view.frame = bounds
         addSubview(view)
-        self.backgroundColor = UIColor.red
-
     }
 
     /// Loads a XIB file into a view and returns this view.
@@ -40,6 +40,17 @@ class RibbonView: UIView {
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         return view
+    }
+
+    func  setRibbonTitle(_ text: String, andImage image: UIImage?) {
+        self.title.text = text
+        if let img = image {
+            self.imageView.image = img
+            self.imageViewWidthConstraint.constant = 36.0
+        } else {
+            self.imageViewWidthConstraint.constant = 0.0
+        }
+        self.setNeedsDisplay()
     }
 
     override func draw(_ rect: CGRect) {
@@ -64,7 +75,7 @@ class RibbonView: UIView {
         path.addLine(to: p2)
         path.addLine(to: p3)
         path.addLine(to: p4)
-
+        
         mask.path = path
         self.layer.mask = mask
         
