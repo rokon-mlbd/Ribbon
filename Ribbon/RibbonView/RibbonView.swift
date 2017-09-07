@@ -29,10 +29,6 @@ class RibbonView: UIView {
     fileprivate func setupView() {
         let view = viewFromNibForClass()
         view.frame = bounds
-//        view.autoresizingMask = [
-//            UIViewAutoresizing.flexibleWidth,
-//            UIViewAutoresizing.flexibleHeight
-//        ]
         addSubview(view)
         self.backgroundColor = UIColor.red
 

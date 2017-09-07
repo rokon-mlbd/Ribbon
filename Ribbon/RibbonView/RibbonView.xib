@@ -23,9 +23,10 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7gT-bp-Rqj">
                     <rect key="frame" x="384" y="0.0" width="36" height="36"/>
+                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-9u-d1v">
-                    <rect key="frame" x="0.0" y="0.0" width="384" height="36"/>
+                    <rect key="frame" x="32" y="0.0" width="344" height="36"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -34,9 +35,9 @@
             <color key="backgroundColor" red="0.0" green="0.72549019609999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="AC3-9u-d1v" secondAttribute="bottom" id="1Bi-Wn-goe"/>
-                <constraint firstItem="AC3-9u-d1v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HOk-ug-AVv"/>
+                <constraint firstItem="AC3-9u-d1v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="HOk-ug-AVv"/>
                 <constraint firstAttribute="bottom" secondItem="7gT-bp-Rqj" secondAttribute="bottom" id="IOe-Tr-wdf"/>
-                <constraint firstItem="7gT-bp-Rqj" firstAttribute="leading" secondItem="AC3-9u-d1v" secondAttribute="trailing" id="MOn-tN-8tC"/>
+                <constraint firstItem="7gT-bp-Rqj" firstAttribute="leading" secondItem="AC3-9u-d1v" secondAttribute="trailing" constant="8" id="MOn-tN-8tC"/>
                 <constraint firstItem="7gT-bp-Rqj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZgU-fg-FGS"/>
                 <constraint firstItem="AC3-9u-d1v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gWS-Cn-4Rs"/>
                 <constraint firstItem="7gT-bp-Rqj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" id="rvh-7X-Lxh"/>

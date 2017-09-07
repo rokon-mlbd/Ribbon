@@ -9,7 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    fileprivate let data = ["Hello",
+                        "World",
+                        "Life is beautiful",
+                        "Swift is awesome",
+                        "There is always hope",
+                        "Monstar Lab Bangladesh Ltd.",
+                        "Nodes Agency",
+                        "I love to move it move it",
+                        "Abcd Efg Ijkl Mnop asdf asdf asdf asdf ",
+                        "asdf asdf 4rw ewrw faf wr wewr rqwerer",
+                        "t adsf wer y t t q we g get f etw sdfasdfasdfasfs s",
+                        "weSfsf fwerwrw ewr werwwer rwe rrw r wrertew",
+                        "Afefwrewrew wrw rer ewr we rwr",
+                        "asdf sadf a sdf rw wer wr wrwerwe"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,12 +40,12 @@ extension ViewController: UICollectionViewDataSource {
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
+        return data.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! RibbonCell
-        cell.configureCell()
+        cell.configureCell(data[indexPath.row])
         return cell
     }
 }
@@ -40,15 +53,14 @@ extension ViewController: UICollectionViewDataSource {
 
 class RibbonCell: UICollectionViewCell {
 
-    @IBOutlet weak var ribbonViewWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var ribbonView: RibbonView!
 
     override func awakeFromNib() {
 
     }
 
-    func configureCell() {
-        ribbonViewWidthConstraint.constant = CGFloat(arc4random_uniform(UInt32(self.bounds.width - 100) ) + 50)
-        self.layoutIfNeeded()
+    func configureCell(_ text: String) {
+        ribbonView.title.text = text
+        ribbonView.setNeedsDisplay()
     }
 }

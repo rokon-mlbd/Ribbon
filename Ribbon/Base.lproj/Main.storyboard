@@ -38,23 +38,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4D-5q-z9u" customClass="RibbonView" customModule="Ribbon" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="250" placeholderIntrinsicHeight="36" translatesAutoresizingMaskIntoConstraints="NO" id="M4D-5q-z9u" customClass="RibbonView" customModule="Ribbon" customModuleProvider="target">
                                                     <rect key="frame" x="125" y="0.0" width="250" height="36"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="250" id="gss-go-o0l"/>
                                                         <constraint firstAttribute="height" constant="36" id="jwu-As-XBZ"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="M4D-5q-z9u" secondAttribute="trailing" id="J1q-pG-eSc"/>
                                             <constraint firstItem="M4D-5q-z9u" firstAttribute="top" secondItem="rNL-YF-k4Y" secondAttribute="top" id="kEN-oV-Fj2"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="ribbonView" destination="M4D-5q-z9u" id="4n3-Vk-PaZ"/>
-                                            <outlet property="ribbonViewWidthConstraint" destination="gss-go-o0l" id="oHo-w1-UZt"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
